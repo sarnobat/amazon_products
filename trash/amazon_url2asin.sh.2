@@ -1,0 +1,7 @@
+cat - \
+	| perl -pe 's{.*dp/(.*?)([/\?].*)?}{$1}g' \
+	| perl -pe 's{.*gp/aw/d/(.*?)[/\?].*}{$1}g' \
+	| perl -pe 's{.*product/(.*?)(/.*)?}{$1}g'	\
+	| perl -pe 's{/ref.*}{}g' \
+	| perl -pe 's{[?].*}{}g' \
+	| perl -pe 's{[#].*}{}g'

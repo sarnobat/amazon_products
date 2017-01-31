@@ -1,0 +1,1 @@
+http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJCQY4ACE3TN4EUMA&AssociateTag=rohidekar-20&IdType=ASIN&ItemId=6302957923&Operation=ItemLookup&ResponseGroup=Images%2CItemAttributes%2COffers%2CReviews%2COfferFull&Service=AWSECommerceService&Timestamp=2017-01-31T07%3A04%3A04Z&Signature=xYA0k3dG4j0Cx4jCXbZTQs1lb%2BeNe8XfuUOtaiZOeAM%3D
