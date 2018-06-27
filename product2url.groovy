@@ -37,7 +37,7 @@ public class AmazonProduct {
 	 * Your AWS Secret Key corresponding to the above ID, as taken from the AWS
 	 * Your Account page.
 	 */
-	private static final String AWS_SECRET_KEY = "3JeN2CWCJ33T+OdHAO209tz4Bm3zBz6DnniygPCb";
+	private static final String AWS_SECRET_KEY = System.getProperty("aws.secret","<NEVER INCLUDE THIS, IT WILL GET HACKED>");
 
 	/*
 	 * Use the end-point according to the region you are interested in.
