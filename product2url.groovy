@@ -31,13 +31,13 @@ public class AmazonProduct {
 	/*
 	 * Your AWS Access Key ID, as taken from the AWS Your Account page.
 	 */
-	private static final String AWS_ACCESS_KEY_ID = "AKIAJCQY4ACE3TN4EUMA";//"AKIAJ2IPYCFBZOFTOLJA";
+	private static final String AWS_ACCESS_KEY_ID = "AKIAJWMSJ64K2ZX2EQ5A";//"AKIAJ2IPYCFBZOFTOLJA";
 
 	/*
 	 * Your AWS Secret Key corresponding to the above ID, as taken from the AWS
 	 * Your Account page.
 	 */
-	private static final String AWS_SECRET_KEY = "QkEr0wn9zr+bAthhdKnhnSooA+URW00CV2gDb+bG";
+	private static final String AWS_SECRET_KEY = "3JeN2CWCJ33T+OdHAO209tz4Bm3zBz6DnniygPCb";
 
 	/*
 	 * Use the end-point according to the region you are interested in.
