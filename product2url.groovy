@@ -31,13 +31,14 @@ public class AmazonProduct {
 	/*
 	 * Your AWS Access Key ID, as taken from the AWS Your Account page.
 	 */
-	private static final String AWS_ACCESS_KEY_ID = "AKIAJWMSJ64K2ZX2EQ5A";//"AKIAJ2IPYCFBZOFTOLJA";
+	private static final String AWS_ACCESS_KEY_ID = System.getenv("AWS_ACCESS_KEY_ID");
 
 	/*
 	 * Your AWS Secret Key corresponding to the above ID, as taken from the AWS
 	 * Your Account page.
 	 */
-	private static final String AWS_SECRET_KEY = System.getProperty("aws.secret","<NEVER INCLUDE THIS, IT WILL GET HACKED>");
+	private static final String AWS_SECRET_KEY = System.getenv("AWS_SECRET_ACCESS_KEY");
+	//System.getProperty("aws.secret","<NEVER INCLUDE THIS, IT WILL GET HACKED>");
 
 	/*
 	 * Use the end-point according to the region you are interested in.
@@ -64,7 +65,7 @@ public class AmazonProduct {
 
 		params.put("Service", "AWSECommerceService");
 		params.put("Operation", "ItemLookup");
-		params.put("AWSAccessKeyId", "AKIAJ2IPYCFBZOFTOLJA");
+		params.put("AWSAccessKeyId", System.getenv("AWS_SECRET_ACCESS_KEY"));
 		params.put("AssociateTag", "rohidekar-20");
 		params.put("ItemId", args[0]);//"B00JWV56BQ");
 		params.put("IdType", "ASIN");
@@ -99,8 +100,8 @@ public class AmazonProduct {
 		private static final String REQUEST_METHOD = "GET";
 
 		private String endpoint = null;
-		private String awsAccessKeyId = null;
-		private String awsSecretKey = null;
+		private String awsAccessKeyId = System.getenv("AWS_ACCESS_KEY_ID");
+		private String awsSecretKey = System.getenv("AWS_SECRET_ACCESS_KEY");
 
 		private SecretKeySpec secretKeySpec = null;
 		private Mac mac = null;

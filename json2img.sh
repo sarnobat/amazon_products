@@ -1,0 +1,1 @@
+cat - | jq -r '.ItemLookupResponse.Items.Item.LargeImage.URL'

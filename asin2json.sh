@@ -1,0 +1,2 @@
+which xml2json >/dev/null || pip install https://github.com/hay/xml2json/zipball/master
+echo "${1:-B01N1X82AU}" | xargs groovy product2url.groovy | xargs curl --silent | xml2json | perl -pe 's/\{http.*?2011-08-01\}//g' | jq '.' 
